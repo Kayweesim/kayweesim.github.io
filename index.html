@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Story Studio</title>
+  <meta name="description" content="Story Studio is a personal tool for making and publishing short videos to my own YouTube channel.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <nav><a href="./">Home</a><a href="privacy.html">Privacy policy</a></nav>
+
+  <h1>Story Studio</h1>
+  <p class="muted">A personal video studio for one YouTube channel.</p>
+
+  <h2>What it is</h2>
+  <p>Story Studio is a private tool that runs on my own computer. I use it to put together short vertical videos
+    (YouTube Shorts) for my own channel: collecting clips, organising them into rankings, and keeping track of the
+    finished videos.</p>
+
+  <h2>How it uses YouTube</h2>
+  <p>When a video is finished, Story Studio can upload it to my YouTube channel using the YouTube Data API. Every
+    upload needs my manual approval first, and I check the title, description and tags before anything is sent.
+    The tool only ever uploads to the channel I sign in with.</p>
+  <ul>
+    <li>It uploads videos I have made and approved (YouTube Data API <code>videos.insert</code>).</li>
+    <li>It reads my channel's name and the status of videos it uploaded, so it can show whether each upload finished.</li>
+    <li>It does not read, change or delete any other videos, comments, subscribers or analytics.</li>
+  </ul>
+
+  <h2>Who can use it</h2>
+  <p>Story Studio is not a public service and has no other users. It is not offered, sold or shared with anyone else.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about Story Studio: <a href="mailto:simkaywee@gmail.com">simkaywee@gmail.com</a></p>
+
+  <footer>Story Studio uses YouTube API Services. See the <a href="privacy.html">privacy policy</a>.</footer>
+</main>
+</body>
+</html>
